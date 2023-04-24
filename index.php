@@ -1,23 +1,3 @@
-<?php
-if (isset($_GET['r'])) {
-    if ($_GET['t']) {
-
-        if ($_GET['res'] == 'S') {
-            echo ' <div class="alert alert-success" role="alert">
-        Se envío el correo con exito!
-    </div>';
-        } else if ($_GET['res'] == 'i') {
-            echo '<div class="alert alert-warning" role="alert">
-        Por favor llene todos los campos!
-      </div>';
-        } else if ($_GET['res'] == 'err') {
-            echo '<div class="alert alert-danger" role="alert">
-        Error al enviar el correo
-      </div>';
-        }
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -270,6 +250,7 @@ if (isset($_GET['r'])) {
             <nav class="nav nav--footer">
                 <h2 class="footer__title">Vuelos Openness</h2>
 
+
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
                         <a href="#" class="nav__links">Inicio</a>
@@ -286,11 +267,33 @@ if (isset($_GET['r'])) {
                 </ul>
             </nav>
 
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+
+            <form class="footer__form" action="registro.php" method="POST">
                 <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <?php
+                if (isset($_GET['r'])) {
+
+
+                    if ($_GET['r'] == 't') {
+                        echo ' <div class="alert alert-success" role="alert">
+        Se envío el correo con exito!
+    </div>';
+                    } else if ($_GET['r'] == 'f') {
+                        echo '<div class="alert alert-warning" role="alert">
+        Por favor llene todos los campos!
+      </div>';
+                    } else if ($_GET['r'] == 'err') {
+                        echo '<div class="alert alert-danger" role="alert">
+        Error al enviar el correo
+      </div>';
+                    }
+                }
+
+                ?>
                 <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                    <input type="submit" value="Registrate" class="footer__submit">
+                    <input type="text" placeholder="Nombre:" class="footer__input" name="nombre">
+                    <input type="email" placeholder="Email:" class="footer__input" name="correo">
+                    <input type="submit" value="Registrate" class="footer__submit" name="registro">
                 </div>
             </form>
         </section>
