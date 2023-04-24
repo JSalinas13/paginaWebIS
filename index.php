@@ -239,10 +239,13 @@
                                 CSS.</span></h2>
                         <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
                             esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        <h2 class="subtitle">Mi nombre es Isaac Salvador Bravo Estrada, <span class="testimony__course">estudiante de
+                                Ingenieria en Sistemas.</span></h2>
+                        <p class="testimony__review">Desarrollador de esta pagina web</p>
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="./images/face4.jpg" class="testimony__img">
+                        <img src="./images/isaac.jpg" class="testimony__img">
                     </figure>
                 </section>
 
