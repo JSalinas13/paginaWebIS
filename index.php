@@ -249,6 +249,23 @@
             </div>
         </section>
 
+        <section class="testimony__body" data-id="6">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Luis Alberto Soto Mejia, <span class="testimony__course">estudiante de
+                                Ingenieria en Sistemas.</span></h2>
+                        <p class="testimony__review">Desarrollador de esta pagina web</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/Alberto.jpeg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+
 
 
 
