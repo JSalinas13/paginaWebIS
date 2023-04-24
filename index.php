@@ -272,20 +272,18 @@
                 <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
                 <?php
                 if (isset($_GET['r'])) {
-
-
                     if ($_GET['r'] == 't') {
-                        echo ' <div class="alert alert-success" role="alert">
-        Se envío el correo con exito!
-    </div>';
+                        echo '<div class="alert alert-success" role="alert">
+                                 Se envío el correo con exito!
+                              </div>';
                     } else if ($_GET['r'] == 'f') {
                         echo '<div class="alert alert-warning" role="alert">
-        Por favor llene todos los campos!
-      </div>';
+                                    Por favor llene todos los campos!
+                              </div>';
                     } else if ($_GET['r'] == 'err') {
                         echo '<div class="alert alert-danger" role="alert">
-        Error al enviar el correo
-      </div>';
+                                     Error al enviar el correo
+                              </div>';
                     }
                 }
 
