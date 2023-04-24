@@ -1,3 +1,23 @@
+<?php
+if (isset($_GET['r'])) {
+    if ($_GET['t']) {
+
+        if ($_GET['res'] == 'S') {
+            echo ' <div class="alert alert-success" role="alert">
+        Se envío el correo con exito!
+    </div>';
+        } else if ($_GET['res'] == 'i') {
+            echo '<div class="alert alert-warning" role="alert">
+        Por favor llene todos los campos!
+      </div>';
+        } else if ($_GET['res'] == 'err') {
+            echo '<div class="alert alert-danger" role="alert">
+        Error al enviar el correo
+      </div>';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,30 +31,26 @@
     <link rel="stylesheet" href="./css/estilos.css">
 
     <!-- Bootstrap 5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 
 
     <meta name="theme-color" content="#2091F9">
 
     <meta name="title" content="La mejor experiencia...">
-    <meta name="description"
-        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta name="description" content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
 
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aprendecss.com">
     <meta property="og:title" content="Aprende CSS desde cero">
-    <meta property="og:description"
-        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="og:description" content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
     <meta property="og:image" content="https://aprendecss.com/images/css.jpg">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://aprendecss.com/">
     <meta property="twitter:title" content="Aprende CSS desde cero">
-    <meta property="twitter:description"
-        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="twitter:description" content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
     <meta property="twitter:image" content="https://aprendecss.com/images/css.jpg">
 
 </head>
@@ -190,8 +206,7 @@
 
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Jesus Trinidad Salinas León<span
-                                class="testimony__course">estudiante
+                        <h2 class="subtitle">Mi nombre es Jesus Trinidad Salinas León<span class="testimony__course">estudiante
                                 de Ing en Sistemas </span></h2>
                         <p class="testimony__review">Desarrollador de esta pagina web</p>
                     </div>
@@ -204,7 +219,7 @@
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__texts">
                         <h2 class="subtitle">Mi nombre es Leonardo Covarrubias Lemus <span class="testimony__course">estudiante de
-                            Ing en Sistemas.</span></h2>
+                                Ing en Sistemas.</span></h2>
                         <p class="testimony__review">Estudiante y Desarrollador de esta p&aacute;gina Web</p>
                     </div>
 
@@ -215,14 +230,15 @@
 
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Luis Alberto Soto Mejia, <span class="testimony__course">estudiante de
-                                Ingenieria en Sistemas.</span></h2>
-                        <p class="testimony__review">Desarrollador de esta pagina web</p>
+                        <h2 class="subtitle">Mi nombre es Karen Arteaga, <span class="testimony__course">estudiante de
+                                CSS.</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
                     </div>
 
-                    <figure class="testimony__picture">
-                        <img src="./images/Alberto.jpeg" class="testimony__img">
-                    </figure>
+                    <figgiture class="testimony__picture">
+                        <img src="./images/face3.jpg" class="testimony__img">
+                    </figgiture>
                 </section>
 
                 <section class="testimony__body" data-id="4">
@@ -245,26 +261,9 @@
 
 
 
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+
 
     </main>
-
-
 
     <footer class="footer">
         <section class="footer__container container">
@@ -312,9 +311,7 @@
     <script src="./js/menu.js"></script>
 
     <!-- Bootstrap 5.3 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 
