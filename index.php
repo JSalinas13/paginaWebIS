@@ -235,10 +235,6 @@
 
                 <section class="testimony__body" data-id="5">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Kevin Ramirez, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
                         <h2 class="subtitle">Mi nombre es Isaac Salvador Bravo Estrada, <span class="testimony__course">estudiante de
                                 Ingenieria en Sistemas.</span></h2>
                         <p class="testimony__review">Desarrollador de esta pagina web</p>
