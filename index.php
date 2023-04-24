@@ -243,7 +243,7 @@ if (isset($_GET['r'])) {
 
                 <section class="testimony__body" data-id="4">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Francisco González Rodriguez, <span class="testimony__course">estudiante de
+                        <h2 class="subtitle">Mi nombre es Francisco Gonzalez Rodriguez, <span class="testimony__course">estudiante de
                              Ingenieria en Sistemas.</span></h2>
                         <p class="testimony__review">Desarrollador de esta pagina web</p>
                     </div>
