@@ -210,15 +210,14 @@
 
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Karen Arteaga, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                    <h2 class="subtitle">Mi nombre es Luis Alberto Soto Mejia, <span class="testimony__course">estudiante de
+                                Ingenieria en Sistemas.</span></h2>
+                        <p class="testimony__review">Desarrollador de esta pagina web</p>
                     </div>
 
-                    <figgiture class="testimony__picture">
-                        <img src="./images/face3.jpg" class="testimony__img">
-                    </figgiture>
+                    <figure class="testimony__picture">
+                        <img src="./images/Alberto.jpeg" class="testimony__img">
+                    </figure>
                 </section>
 
                 <section class="testimony__body" data-id="4">
@@ -245,26 +244,11 @@
                     </figure>
                 </section>
 
-                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
-            </div>
-        </section>
-
-        <section class="testimony__body" data-id="6">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Luis Alberto Soto Mejia, <span class="testimony__course">estudiante de
-                                Ingenieria en Sistemas.</span></h2>
-                        <p class="testimony__review">Desarrollador de esta pagina web</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/Alberto.jpeg" class="testimony__img">
-                    </figure>
-                </section>
+                
 
                 <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
             </div>
         </section>
-
 
 
 
